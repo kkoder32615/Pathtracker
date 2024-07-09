@@ -1,7 +1,9 @@
 package com.brunedawg.pathtracker.data.dataclasses
 
 import com.brunedawg.pathtracker.data.enums.DamageType
+import kotlinx.serialization.Serializable
 
+@Serializable
 data class Weapon(
     var name: String = "",
     var attackBonus: Int = 0,

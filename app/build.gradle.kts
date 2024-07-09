@@ -3,6 +3,7 @@ plugins {
     alias(libs.plugins.jetbrains.kotlin.android)
     id("androidx.room")
     id("com.google.devtools.ksp") version "1.9.23-1.0.20"
+    kotlin("plugin.serialization") version "2.0.0"
 }
 
 android {
@@ -68,6 +69,7 @@ dependencies {
     implementation(libs.androidx.ui)
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
+    implementation(libs.kotlinx.serialization.json)
     ksp(libs.androidx.room.compiler)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

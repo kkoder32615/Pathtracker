@@ -2,7 +2,9 @@ package com.brunedawg.pathtracker.data.dataclasses
 
 import com.brunedawg.pathtracker.data.enums.MagicSchool
 import com.brunedawg.pathtracker.data.enums.SaveType
+import kotlinx.serialization.Serializable
 
+@Serializable
 data class Spell(
     var level: Int = 0,
     var specialAbility: Boolean = false,

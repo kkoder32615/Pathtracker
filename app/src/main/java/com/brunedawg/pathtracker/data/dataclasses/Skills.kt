@@ -2,7 +2,9 @@ package com.brunedawg.pathtracker.data.dataclasses
 
 import com.brunedawg.pathtracker.data.enums.BaseStat
 import com.brunedawg.pathtracker.data.enums.Skill
+import kotlinx.serialization.Serializable
 
+@Serializable
 data class Skills(
     var name: Skill = Skill.ACROBATICS,
     var total: Int = 0,
